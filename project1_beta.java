@@ -1,8 +1,3 @@
-/*
-this program accepts a number (0-127)
-and gives the binary code of this number
-*/
-
 import java.util.Scanner;
 import java.lang.String;
 
@@ -24,7 +19,6 @@ public class project1_beta {
             boolean gamestatus=true;
             while (gamestatus==true){
                 System.out.println("please press <<1>> if you want replay or <<0>> if you want end the game");
-                System.out.println(vybir);
                 vybir=selection.nextByte();
                 if (vybir==1){
                     gamestatus=false;
@@ -40,13 +34,15 @@ public class project1_beta {
                 }
             }
         }
+
+
     }
     public static void promain(){
         boolean perevirka=false;
         byte znachenya = 0;
         while (perevirka==false){
-            System.out.println("please select");
-            System.out.println("1-is the creation of binary code");
+            System.out.println("please select")            
+	    System.out.println("1-is the creation of binary code");
             System.out.println("2-is the creation of number");
             znachenya=selection.nextByte();
             if (znachenya==1 || znachenya==2 ) {
@@ -59,7 +55,6 @@ public class project1_beta {
 
         if(znachenya==1){
             perevirckachysla();
-            System.out.println(chyslos);
             creatBinary();
             System.out.println("your binary code is "+do_code);
         }
